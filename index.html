@@ -1,5 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anna Guinet - Blog">
+    <title>Blog &ndash; Anna Guinet </title>
+	<link rel=icon href="./img/favicon.ico">
+    <link rel="stylesheet" href="./css/font/Neuzeit/stylesheet.css" type="text/css" charset="utf-8" /> 
+	<link rel="stylesheet" href="./css/font/QuestaSans/stylesheet.css" type="text/css" charset="utf-8" /> 
+	<link rel="stylesheet" href="./css/font/BrandonGrotesque/stylesheet.css" type="text/css" charset="utf-8" /> 
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" type="text/css" crossorigin="anonymous">
+    
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <!--<![endif]-->
 
-<?php require 'header.php'; ?>
+
+	<!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/blog.css">
+    <!--<![endif]-->
+
+</head>
+<body>
+
+<div id="layout" class="pure-g">
+
+    <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="header">
+	    <img src="./img/profile_little.JPG" alt=""/>
+            <h1 class="brand-title">Anna Guinet</h1>
+            <h2 class="brand-tagline">PhD Candidate</h2>
+			<h3 class="brand-tagline">Ruhr Universität Bochum</h3>
+
+			<div class="pure-menu">
+				<ul class="pure-menu-list">
+					<li class="pure-menu-item"><a href="index" class="pure-menu-link">Home</a></li>
+					<li class="pure-menu-item"><a href="publications" class="pure-menu-link">Publications</a></li>
+					<li class="pure-menu-item"><a href="activities" class="pure-menu-link">Activities</a></li>
+					<li class="pure-menu-item"><a href="resume" class="pure-menu-link">Resume</a></li>
+					<li class="pure-menu-item"><a href="others" class="pure-menu-link">Others</a></li>
+				</ul>
+			</div>
+        </div>
+    </div>
+
+    <!-- End header -->
 
     <div class="content pure-u-1 pure-u-md-3-4">
         <div>
@@ -162,8 +213,34 @@
                 </section>
 			</div>
 
-			<?php require 'footer.php'; ?>	
-			
+			<!-- Start footer -->
+			<div class="footer">
+				<hr />
+				<div>
+					<h3>CONTACT</h3>
+					<div class="pure-g">
+						<div class="pure-u-1 pure-u-md-1-3"> 
+							<p>email (at) annagui.net</p>
+						</div>
+						<div class="pure-u-1 pure-u-md-1-3"> 
+							<!-- <p> 
+								Mercator 1, Toernooiveld 212<br />
+								Radboud University<br />
+								6525 EC Nijmegen<br />
+								The Netherlands
+							</p> -->
+						</div>
+						<div class="pure-u-1 pure-u-md-1-3">
+							<p><a href="https://github.com/anna-guinet">GitHub</a></p>
+							<p><a href="https://scholar.google.fr/citations?hl=fr&user=ADjEFcwAAAAJ">Google Scholar</a></p>
+							<p><a href="https://www.linkedin.com/in/anna-guinet-804a4aa9/">LinkedIn</a>  &#9642;
+							   <a href="https://orcid.org/0000-0001-8753-1266">ORCID</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End footer -->	
+		
 		</div>
 	</div>
 </div>
