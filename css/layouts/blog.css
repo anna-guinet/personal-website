@@ -167,21 +167,16 @@ h3 {
 
 	.post-link-escada-clock {
         background: #8156a7;
-		font-size: 90%;
 		width: 100%;
-		margin: 0 auto 2em auto;
-		max-width: 160px;
-		display: block;
-		color: white;
-		font-family: 'Brandon Grotesque Regular', sans-serif;
+/*		max-width: 160px;
+		display: block;*/
     }
 	
 	.post-link-escada-homepage{
 		background: #8156a7;
-		font-size: 90%;
 		width: 100%;
-		margin: 3em 0;
-		max-width: 160px;
+/*		margin: 3em 0;
+		max-width: 160px;*/
 	}
 	
 
