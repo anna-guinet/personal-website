@@ -172,15 +172,16 @@ h3 {
 	.post-link-escada-clock {
         background: #8156a7;
 		width: 100%;
-/*		max-width: 160px;
-		display: block;*/
+		max-width: 160px;
+		margin: 3em auto;
+		display: block;
     }
 	
 	.post-link-escada-homepage{
 		background: #8156a7;
 		width: 100%;
-/*		margin: 3em 0;
-		max-width: 160px;*/
+		margin: 3em auto;
+		max-width: 160px;
 	}
 	
 
