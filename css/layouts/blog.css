@@ -146,17 +146,13 @@ h3 {
 	font-family: 'Brandon Grotesque Regular', sans-serif;
 	text-align: center;
 }
-    .post-link-pdf {
+    .post-link-bib {
         color: #1FA149;
         background: #ffffff;
         border: 2px solid #1FA149;
     }
-	
-		.post-link-pdf a{
-        color: white
-		}
-		.post-link-pdf:hover, 
-    	.post-link-pdf:focus {
+		.post-link-bib:hover, 
+    	.post-link-bib:focus {
 	        color: #fff;
 	        background: #1FA149;
     	}
@@ -202,7 +198,6 @@ h3 {
 		margin: 3em auto;
 		display: block;
 		color: #fff;
-		font-size: 100%;
     }
 	
 	.post-link-escada-homepage{
@@ -210,9 +205,9 @@ h3 {
 		background: #8156a7;
 		width: 100%;
 		margin: 3em auto;
-		max-width: 160px;
+		max-width: 200px;
 		color:#fff;
-		font-size: 110%;
+		font-size: 100%;
 	}
 	
 
