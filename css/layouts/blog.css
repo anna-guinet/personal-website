@@ -157,8 +157,15 @@ h3 {
 		}
 	
 	.post-link-url {
-        background: #8156a7;
+        color: #8156a7;
+        background: #ffffff;
+        border: 2px solid #8156a7;
     }
+    	.post-link-url:hover, 
+    	.post-link-url:focus {
+	        color: #fff;
+	        background: #8156a7;
+    	}
 
     .post-link-url2 {
         background: #A62D5D;
@@ -229,9 +236,9 @@ span.post-category{
 	border-style: none;
 	border-width: 0rem;
 	border-color: #EF2D56;
-	-webkit-box-shadow: inset 31px 8px 0px -16px rgba(18,34,76,1);
-	-moz-box-shadow: inset 31px 8px 0px -16px rgba(18,34,76,1);
-	-box-shadow: inset 31px 8px 0px -16px rgba(18,34,76,1);
+	-webkit-box-shadow: inset 25px 8px 0px -16px rgba(18,34,76,1);
+	-moz-box-shadow: inset 25px 8px 0px -16px rgba(18,34,76,1);
+	-box-shadow: inset 25px 8px 0px -16px rgba(18,34,76,1);
 }
 
 span.post-dates{
