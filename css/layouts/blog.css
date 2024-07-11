@@ -391,6 +391,12 @@ p.post-text-resume{
 		padding: .3em 0 .2em 0;
 	}
 
+	.header .pure-menu-list li .pure-menu-link:hover,
+    .header .pure-menu-list li .pure-menu-link:focus{
+    	text-decoration: none;
+		background: transparent;
+    }
+
 .pure-menu-selected{
 	color: #A62D5D;
 }
