@@ -141,20 +141,25 @@ h3 {
 
 .post-link {
     margin: 0 0.1em;
-    padding: 0.3em 1em;
-    color: #fff;
-    background: #999;
+    padding: 0.3em 0.6em;
     font-size: 90%;
 	font-family: 'Brandon Grotesque Regular', sans-serif;
 	text-align: center;
 }
     .post-link-pdf {
-        background: #1FA149;
+        color: #1FA149;
+        background: #ffffff;
+        border: 2px solid #1FA149;
     }
 	
 		.post-link-pdf a{
         color: white
 		}
+		.post-link-pdf:hover, 
+    	.post-link-pdf:focus {
+	        color: #fff;
+	        background: #1FA149;
+    	}
 	
 	.post-link-url {
         color: #8156a7;
@@ -168,15 +173,29 @@ h3 {
     	}
 
     .post-link-url2 {
-        background: #A62D5D;
+        color: #A62D5D;
+        background: #ffffff;
+        border: 2px solid #A62D5D;
     }
+    	.post-link-url2:hover, 
+    	.post-link-url2:focus {
+	        color: #fff;
+	        background: #A62D5D;
+    	}
 
     .post-link-video {
-        /*background: #EF5E32;*/
-        background: #C42D8C;
+        color: #C42D8C;
+        background: #ffffff;
+        border: 2px solid #C42D8C;
     }
+    	.post-link-video:hover, 
+    	.post-link-video:focus {
+	        color: #fff;
+	        background: #C42D8C;
+    	}
 
 	.post-link-escada-clock {
+		padding: 0.3em 1em;
         background: #8156a7;
 		width: 100%;
 		max-width: 160px;
@@ -185,6 +204,7 @@ h3 {
     }
 	
 	.post-link-escada-homepage{
+		padding: 0.3em 1em;
 		background: #8156a7;
 		width: 100%;
 		margin: 3em auto;
