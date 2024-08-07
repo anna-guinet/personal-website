@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded',
             item.addEventListener('click',
                 function () {
                     menuItems.forEach(menuItem => menuItem
-                        .classList.remove('active'));
-                    this.classList.add('active');
+                        .classList.remove('pure-menu-selected'));
+                    this.classList.add('pure-menu-selected');
                 });
         });
     });

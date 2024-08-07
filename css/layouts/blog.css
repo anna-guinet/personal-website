@@ -367,7 +367,7 @@ p.post-text-resume{
 		zoom: 1;
 	}
 
-	.header .pure-menu-item.active{
+	.header .pure-menu-item.pure-menu-selected{
 			color: #A62D5D;
 			text-decoration: none;
 			background: none;
