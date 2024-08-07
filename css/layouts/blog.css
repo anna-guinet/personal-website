@@ -1,3 +1,5 @@
+/* Original template by purecss.io | Modified by Anna Guinet */
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -391,7 +393,7 @@ p.post-text-resume{
 		padding: .3em 0 .2em 0;
 	}
 
-		.header .pure-menu-link.active{
+		.header .pure-menu-link.pure-menu-link-active{
 			color: #A62D5D;
 			text-decoration: none;
 			background: none;
