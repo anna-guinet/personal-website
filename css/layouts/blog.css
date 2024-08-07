@@ -366,6 +366,13 @@ p.post-text-resume{
 		padding-top: 1em;
 		zoom: 1;
 	}
+
+	.header .pure-menu-item.active{
+			color: #A62D5D;
+			text-decoration: none;
+			background: none;
+	}
+	
 		.header .pure-menu-item a {
 			margin: 0;
 			letter-spacing: 0.05em;
