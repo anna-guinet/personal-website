@@ -255,9 +255,9 @@ span.post-category{
 	border-style: none;
 	border-width: 0rem;
 	border-color: #EF2D56;
-	-webkit-box-shadow: inset 25px 8px 0px -16px rgba(18,34,76,1);
+/*	-webkit-box-shadow: inset 25px 8px 0px -16px rgba(18,34,76,1);
 	-moz-box-shadow: inset 25px 8px 0px -16px rgba(18,34,76,1);
-	-box-shadow: inset 25px 8px 0px -16px rgba(18,34,76,1);
+	-box-shadow: inset 25px 8px 0px -16px rgba(18,34,76,1);*/
 }
 
 span.post-dates{
