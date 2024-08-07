@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded',
         menuItems.forEach(item => {
             item.addEventListener('click',
                 function () {
-                    menuItems.forEach(navItem => menuItem
+                    menuItems.forEach(menuItem => menuItem
                         .classList.remove('active'));
                     this.classList.add('active');
                 });
