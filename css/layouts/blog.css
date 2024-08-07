@@ -366,13 +366,6 @@ p.post-text-resume{
 		padding-top: 1em;
 		zoom: 1;
 	}
-
-	.header .pure-menu-item.pure-menu-selected{
-			color: #A62D5D;
-			text-decoration: none;
-			background: none;
-	}
-	
 		.header .pure-menu-item a {
 			margin: 0;
 			letter-spacing: 0.05em;
@@ -397,6 +390,13 @@ p.post-text-resume{
 	.header .pure-menu-link{
 		padding: .3em 0 .2em 0;
 	}
+
+		.header .pure-menu-link.active{
+			color: #A62D5D;
+			text-decoration: none;
+			background: none;
+		}
+	
 
 	.header .pure-menu-list li .pure-menu-link:hover,
     .header .pure-menu-list li .pure-menu-link:focus{

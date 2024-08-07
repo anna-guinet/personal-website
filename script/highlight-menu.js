@@ -1,14 +1,20 @@
-document.addEventListener('DOMContentLoaded',
-    function () {
-        const menuItems = document
-            .querySelectorAll('.pure-menu-item');
- 
-        menuItems.forEach(item => {
-            item.addEventListener('click',
-                function () {
-                    menuItems.forEach(menuItem => menuItem
-                        .classList.remove('pure-menu-selected'));
-                    this.classList.add('pure-menu-selected');
-                });
-        });
-    });
+document.addEventListener('DOMContentLoaded', function() {
+const selector = '.pure-menu-link';
+const elems = Array.from( document.querySelectorAll( selector ) );
+const navigation = document.querySelector( 'ul.pure-menu-list' );
+
+function makeActive( evt ) {
+  const target = evt.target;
+  
+  if ( !target || !target.matches( selector ) ) {
+    return;
+  }
+  
+  elems.forEach( elem => elem.classList.remove( 'active' ) );
+    
+    evt.target.classList.add( 'active' );
+};
+
+navigation.addEventListener( 'mousedown', makeActive );
+
+} );
