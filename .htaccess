@@ -39,6 +39,10 @@ RewriteRule ^(.*)$ https://www.annagui.net/$1 [R=301,L]
 
 RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
 
+# Errors
+ErrorDocument 403 https://www.annagui.net/
+ErrorDocument 404 https://www.annagui.net/
+
 # Rename path .php to /
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
