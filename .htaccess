@@ -4,12 +4,8 @@
 RewriteEngine on
 
 # Redirect 
-Redirect "https://annagui.net/" "https://www.annagui.net/"
-
-# Redirect errors
-ErrorDocument 404 https://www.annagui.net/
-ErrorDocument 403 https://www.annagui.net/
-ErrorDocument 400 https://www.annagui.net/
+Redirect 301 "https://annagui.net/" "https://www.annagui.net/"
+Redirect 301 "http://annagui.net/" "https://www.annagui.net/"
 
 # Remove trailing slash from non-filepath urls
 RewriteCond %{REQUEST_URI} /(.+)/$
@@ -39,9 +35,10 @@ RewriteRule ^(.*)$ https://www.annagui.net/$1 [R=301,L]
 
 RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
 
-# Errors
-ErrorDocument 403 https://www.annagui.net/
+# Redirect errors
 ErrorDocument 404 https://www.annagui.net/
+ErrorDocument 403 https://www.annagui.net/
+ErrorDocument 400 https://www.annagui.net/
 
 # Rename path .php to /
 RewriteEngine On
