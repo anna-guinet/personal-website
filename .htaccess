@@ -1,0 +1,57 @@
+#### Force HTTPS://WWW and remove trailing / from files ####
+
+## Turn on rewrite engine
+RewriteEngine on
+
+# Redirect 
+Redirect 301 "https://annagui.net/" "https://www.annagui.net/"
+Redirect 301 "http://annagui.net/" "https://www.annagui.net/"
+
+# Remove trailing slash from non-filepath urls
+RewriteCond %{REQUEST_URI} /(.+)/$
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ https://www.annagui.net/%1 [R=301,L]
+
+# Include trailing slash on directory 
+RewriteCond %{REQUEST_URI} !(.+)/$
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.+)$ https://www.annagui.net/$1/ [R=301,L]
+
+# Force HTTPS and WWW 
+RewriteCond %{HTTP_HOST} !^www\.(.*)$ [OR,NC]
+RewriteCond %{https} off  
+RewriteRule ^(.*)$ https://www.annagui.net/$1 [R=301,L]
+
+#### END Force HTTPS://WWW and remove trailing / from files ####
+
+#RewriteCond %{HTTP_REFERER} !^http://annagui.net/.*$      [NC]
+#RewriteCond %{HTTP_REFERER} !^http://annagui.net$      [NC]
+#RewriteCond %{HTTP_REFERER} !^http://www.annagui.net/.*$      [NC]
+#RewriteCond %{HTTP_REFERER} !^http://www.annagui.net$      [NC]
+#RewriteCond %{HTTP_REFERER} !^https://annagui.net/.*$      [NC]
+#RewriteCond %{HTTP_REFERER} !^https://annagui.net$      [NC]
+#RewriteCond %{HTTP_REFERER} !^https://www.annagui.net/.*$      [NC]
+#RewriteCond %{HTTP_REFERER} !^https://www.annagui.net$      [NC]
+
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
+# Redirect errors
+ErrorDocument 404 https://www.annagui.net/
+ErrorDocument 403 https://www.annagui.net/
+ErrorDocument 400 https://www.annagui.net/
+
+# Rename path .php to /
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Rename path .html to /
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+IndexIgnore *
+IndexIgnore *.pdf
+IndexIgnore *.jpg
+
+DirectoryIndex index.html
