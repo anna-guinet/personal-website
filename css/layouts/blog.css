@@ -147,6 +147,11 @@ h3 {
 	font-family: 'Cabin Regular', sans-serif;
 	text-align: center;
 }
+
+	.post-link .no-margin-bottom{
+		margin: 0.2em 0.1em 0em 0em;
+	}
+
     .post-link-bib {
         color: #1FA149;
         background: #ffffff;
