@@ -523,6 +523,14 @@ p.post-text-resume{
 	text-align: center;
 }
 
+.hades-logo{
+	max-width: 450px;
+	width: 100%;
+	margin: 1em auto;
+	display: block;
+	text-align: center;
+}
+
 /*
  * -- LAYOUT STYLES --
  * Some useful classes
